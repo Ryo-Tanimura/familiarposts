@@ -9,4 +9,6 @@ class User < ActiveRecord::Base
   
   validates :profile, length: { maximum: 100 }
   
+  has_many :microposts
+  
 end
